@@ -7,9 +7,9 @@ import api from "@/lib/api";
 type Row = Record<string, string | number | boolean | null | Row[]>;
 type Mode = "apis" | "keys" | "subscriptions" | "usage" | "billing";
 const titles: Record<Mode,string> = {apis:"API Management",keys:"API Key Management",subscriptions:"Subscriptions",usage:"API Usage Logs",billing:"Billing & Invoices"};
-const input = "rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900";
-const button = "rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50";
-const card = "rounded-xl border border-slate-200 bg-white p-5 shadow-sm";
+const input = "rounded-lg border border-base-300 bg-base-100 px-3 py-2 text-sm text-base-content";
+const button = "rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-content disabled:opacity-50";
+const card = "rounded-xl border border-base-300 bg-base-100 p-5 shadow-sm";
 function message(err: unknown) { return axios.isAxiosError(err) ? err.response?.data?.message || "Unable to contact backend." : "Unable to complete request."; }
 function value(row: Row, key: string) { return String(row[key] ?? ""); }
 
