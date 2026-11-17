@@ -6,10 +6,12 @@ import {
   CreditCard,
   Receipt,
   KeyRound,
+  Building2,
 } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+  { name: "Organizations", href: "/organizations", icon: Building2 },
   { name: "API Usage Logs", href: "/usage", icon: Activity },
   { name: "API Management", href: "/apis", icon: Boxes },
   { name: "Subscriptions", href: "/subscriptions", icon: CreditCard },
